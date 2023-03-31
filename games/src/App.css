@@ -1,0 +1,101 @@
+*{
+margin: 0;
+padding: 0;
+}
+/* css for part containg the image only   */
+.img-container{
+  /* border: 2px solid red; */
+  width: 99vw;
+  height: 120vh;
+  box-sizing: border-box;
+  background-image:url("./images/magic.jpg");  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  padding: 9px ;
+  filter: brightness(19%);
+  position:absolute; 
+  z-index: -1;
+  top: 0px;
+  left:0px;
+  overflow-x: hidden;
+}
+/* adding some custom css for the navbar that is copied from bootstrap   */
+.navbar{
+  padding: 2px;
+  padding-left: 4px;
+  background-color: #05050b;
+  /* background: transparent; */
+  /* border: 2px solid red; */
+  width: 80vw;
+  margin: auto;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 1px 1px;
+  padding-right: 80px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding-left: 40px; 
+  /* this left and right padding is tempary we have to change after adding the other links */
+  padding-right: 40px;
+  z-index: -1;
+}
+#offcanvasDarkNavbar{
+  background-color: #05050b !important;
+  /* background: transparent; */
+  /* border: 2px solid red; */
+  /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 1px 2px; */
+}
+.logo{
+  font-size: 2rem;
+}
+
+
+/* adding css for the main cont component  */
+
+
+.main-container{
+  /* border: 2px solid red ; */
+  height: 110vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  filter: brightness(100%) !important;
+  color: white;
+  
+}
+.main-container-items h1{
+  text-align: center;
+  padding: 12px;
+  font-weight: 200;
+}
+.main-container-items {
+  /* border: 2px solid red ; */
+  flex-basis: 48%; 
+}
+#left-text-container{
+  padding: 4px;
+}
+
+.main-container-items p{
+  text-align: left;
+  font-weight: 100;
+  opacity: .5;
+  padding: 12px;
+}
+/* adding style for mostly used buttons  */
+.button{
+   width: 30%;
+   cursor: pointer;
+   margin: auto;
+   border: 2px solid white;
+   text-align: center;
+   margin-top: 7px;
+   margin-bottom: 9px;
+   padding: 6px;
+   border-radius: 9px;
+   transition: all 1s;
+  }
+.button:hover{
+  border-color: rgba(3, 102, 214, 0.3);
+  color: rgba(16, 122, 243, 0.245);
+}
